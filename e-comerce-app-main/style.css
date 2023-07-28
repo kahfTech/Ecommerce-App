@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --mainColor: hsl(26, 100%, 55%);
+  --paleOrange: hsl(25, 100%, 94%);
+  --veryDarkBlue: hsl(220, 13%, 13%);
+  --darkGrayishBlue: hsl(219, 9%, 45%);
+  --grayishBlue: hsl(220, 14%, 75%);
+  --lightGrayishBlue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.navbar,
+.left-nav,
+.right-nav,
+.arrows, .prices, .counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  border: 1px solid red;
+  background-color: var(--white);
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+.left-nav,
+.right-nav {
+  gap: 20px;
+}
+
+.avatar {
+  width: 30px !important;
+}
+
+.hero {
+  position: relative;
+  top: 70px;
+}
+
+#shoe {
+  max-width: 100%;
+}
+
+.arrows {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  padding: 0 10px;
+}
+
+.arrows img {
+  background-color: var(--white);
+  padding: 12px 15px;
+  border-radius: 50%;
+}
+
+.product-info {
+  margin-top: 85px;
+  padding: 0 20px;
+}
+
+.product-info h3 {
+  color: var(--mainColor);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.product-info h2 {
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.product-info p{ 
+  color: var(--darkGrayishBlue);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.prices, .counter {
+  padding: 20px;
+}
+
+.prices p {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 24px;
+  display: flex;
+}
+
+.prices span {
+  color: var(--mainColor);
+  background-color: var(--paleOrange);
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 8px;
+}
+
+.prices s {
+  color: var(--darkGrayishBlue);
+  font-weight: bold;
+}
+
+.bottom {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.counter, .bottom button {
+  border-radius: 10px !important;
+}
+
+.counter {
+background-color: var(--lightGrayishBlue);
+}
+
+.counter span {
+  font-weight: 700;
+}
+
+.bottom button {
+  all: unset;
+  width: 100%;
+  margin: 20px 0;
+  gap: 10px;
+  background-color: var(--mainColor);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  box-shadow: 0px 3px 20px 0 hsl(26, 100%, 55%, 0.5);
+}
